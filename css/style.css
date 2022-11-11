@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #79ae92, #fbffcd);
+    display: flex;
+    font-family: 'Comfortaa', cursive;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border: 0;
+}
+.container{
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 350px;
+    max-width: 100%;
+}
+.header{
+    padding: 10px 20px;
+}
+.header h2{
+    text-align: center;
+    font-weight: 600;
+    color: #fbffcd;
+    text-shadow: -2px 2px 5px #1879c4;
+    font-size: 28px;
+}
+.form{
+    padding: 0 20px 15px;
+}
+.input-box{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.input-box label{
+    color: #fbffcd;
+}
+.input-box input{
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #1879c4;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    width: 100%;
+    padding: 3px;
+}
+.input-box i{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    visibility: hidden;
+}
+.input-box.success input{
+    border-bottom: 3px solid #4eca64;
+}
+.input-box.error input{
+    border-bottom: 3px solid #db5a5a;
+}
+.input-box.error i.img-error{
+    visibility: visible;
+}
+.input-box.success i.img-success{
+    visibility: visible;
+}
+.input-box.error span{
+    color: #db5a5a;
+    visibility: visible;
+}
+.input-box span{
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+}
+div.inputs{
+    color: #fbffcd;
+    margin-bottom: 20px;
+}
+.radio{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fbffcd;
+}
+.radio:checked{
+    background-color: #1879c4;
+}
+select{
+    background-color: #1879c4;
+    color: #fbffcd;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+}
+select::-webkit-scrollbar { 
+    display: none;
+  }
+div.terms label a{
+    text-decoration: none;
+    color: #1879c4;
+}
+#spanTerms{
+    visibility: hidden;
+    color: #db5a5a;
+    font-size: 14px;
+}
+.form button{
+    border-radius: 15px;
+    color: #fff;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+.form button:hover{
+    transition: 0.3s;
+}
+.form button#send{
+    background-color: #3da350;
+}
+.form button#send:hover{
+    background-color: #0f7423;
+}
+.form button#cancel{
+    background-color: #c52424;
+}
+.form button#cancel:hover{
+    background-color: #9c1717;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Criar Conta</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="input-box">
+                <label for="user" >Usuário</label>
+                <input type="text" id="user">
+                <i class="img-success" ><img src="img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="img/error-icon.svg" alt=""></i>
+                <span>Mensagem de erro!</span>
+            </div>
+            <div class="input-box">
+                <label for="username" >Nome</label>
+                <input type="text" id="username">
+                <i class="img-success" ><img src="img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="img/error-icon.svg" alt=""></i>
+                <span>Mensagem de erro!</span>
+            </div>
+            <div class="input-box">
+                <label>Email</label>
+                <input type="email" id="email">
+                <i class="img-success" ><img src="img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="img/error-icon.svg" alt=""></i>
+                <span>Mensagem de erro!</span>
+            </div>
+
+            <div class="input-box">
+                <label>Senha</label>
+                <input type="password" id="password">
+                <i class="img-success" ><img src="img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="img/error-icon.svg" alt=""></i>
+                <span>Mensagem de erro!</span>
+            </div>
+
+            <div class="input-box">
+                <label>Confirme sua senha</label>
+                <input type="password" id="password-two">
+                <i class="img-success" ><img src="img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="img/error-icon.svg" alt=""></i>
+                <span>Mensagem de erro!</span>
+            </div>
+
+            <div class="sexo inputs">
+                <p>Gênero:</p>
+                <input type="radio" name="genre" id="feminine" class="radio" value="feminine">
+                <label for="feminine">Feminino</label><br>
+                <input type="radio" name="genre" id="masculine" class="radio" value="masculine">
+                <label for="masculine">Masculino</label><br>
+                <input type="radio" name="genre" id="other" class="radio" value="other" checked>
+                <label for="other">Outro</label>
+            </div>
+            
+            <div class="inputs">
+                <p>Selecione seu estado</p>
+                <select id="estado" name="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+            </div>
+
+            <div class="terms inputs">
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">Eu li e aceito os <a href="#" target="_blank">termos de uso</a>.</label>
+                <span id="spanTerms">Aceite os termos!</span>
+            </div>
+
+            <button type="submit" id="send">Enviar</button>
+            <button type="reset" id="cancel">Cancelar</button>
+        </form>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
